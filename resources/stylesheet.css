@@ -1,0 +1,83 @@
+body {
+    background-color: teal;
+    background-image: linear-gradient(rgb(0, 75, 75), rgb(43, 153, 142), rgb(0, 75, 75));
+    font-family: Poppins, sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    color: rgb(0, 36, 30);
+    font-size: 2rem;
+}
+
+p {
+    margin: 0;
+    padding: 5px;
+    
+}
+
+button {
+    margin: 0;
+    background-color: turquoise;
+    color: rgb(0, 36, 30);
+    font-size: 1.5rem;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(6, 50px) / repeat(8, 1fr);
+    width: 80%;
+    margin: auto;
+}
+
+#gridHead {
+    grid-area: 1 / 1 / span 1 / span 8;
+}
+
+#encrypt {
+    grid-area: 3 / 2 / span 2 / span 3;
+}
+
+#decrypt {
+    grid-area: 3 / 5 / span 2 / span 3;
+}
+
+#codeBox {
+    visibility: hidden;
+    grid-area: 2 / 3 / span 5 / span 4;
+    z-index: 1;
+    background-color:rgb(4, 32, 30);
+    /*border: 2px solid black;*/
+    display: grid;
+    grid-template: repeat(5, 50px) / repeat(4, 1fr);
+    
+}
+
+#resultHeader {
+    grid-area: 1 / 1 / span 1 / span 4;
+}
+
+#codeText {
+    grid-area: 3 / 1 / span 3 / span 4;
+
+}
+
+#ok {
+    grid-area: 5 / 4 / span 1 / span 1;
+        margin: 0;
+        background-color: turquoise;
+        color: rgb(0, 36, 30);
+        font-size: 1rem;
+        font-family: Poppins, sans-serif;
+        font-weight: bold;
+        
+    
+}
